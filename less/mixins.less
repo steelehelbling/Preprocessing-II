@@ -1,1 +1,25 @@
 // Mixins in here
+.flex(@justify, @align,){
+display: flex;
+justify-content: @justify;
+align-items: @align;
+
+
+}
+
+
+.button(@backColor, @textColor)
+{
+background-color:@backColor;
+color:@textColor;
+padding: 15px 40px 15px 40px;
+border-radius: 15px;
+font-size: 1.9rem;
+@media @mobile{width: 100%;}
+.flex(center, center,)
+}
+
+.direct(@column){
+    display: flex;
+    flex-direction: @column;
+}
